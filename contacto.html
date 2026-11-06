@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Blog de Diego</h1>
-        <p>Hablando de mi</p>
+        <p>Un espacio para compartir mis intereses, experiencias y mis proyectos</p>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -22,23 +22,36 @@
     </header>
     <main>
         <section>
-            <h2>Últimas publicaciones</h2>
-            <article>
-                <h3>Acerca de Mi ---</h3>
-                <p><time datetime="2026-10-29">29 de Octubre del 2026</time></p>
-                <p>[Resumen 1 a 2 lineas articulo 1].<br /></p>
-                <a href="articulo-1.html">Leer más</a>
-            </article>
-            <article>
-                <h3>Acerca de Mi ----</h3>
-                <p><time datetime="2026-10-29">29 de Octubre del 2026</time></p>
-                <p>[Resumen 1 a 2 lineas articulo 2].<br /></p>
-                <a href="articulo-2.html">Leer más</a>
-            </article>
+            <h2>Contáctame</h2>
+            <form method="get">
+                <p>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+        
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+
+                <p>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar mensaje</button>
+                </p>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Diego. Todos los derechos resevados</p>
+        <p>&copy; 2026 Diego. Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
