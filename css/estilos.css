@@ -19,6 +19,11 @@
     --fuente-titulos: "Poppins", system-ui,sans-serif;
         /*medidas*/
     --ancho-contenido: 960px;
+
+    /*tarjetas*/
+    --radio:12px;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.8);
+    -sombra-fuerte: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -134,5 +139,13 @@ nav a:hover{
 nav a.activo {
     background-color: #ffff;
     color: var(--color-primario)
+}
+
+/*tarjetas*/
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280, 1fr));
+    gap: 1.5rem;
+
 }
 
